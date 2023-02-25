@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>E-Commerce Product Page</title>
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+            <div class="sneakers">
+
+                <input type="checkbox" id="check">
+                <label for="check">
+                <img id="btn" src="./ecommerce-product-page-main/images/icon-menu.svg" alt="">
+                <img id="cancel" src="./ecommerce-product-page-main/images/icon-close.svg" alt="">
+                </label>
+                <div class="nav-bar">
+                    <ul>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="header-img">
+                <img class="logo" src="./ecommerce-product-page-main/images/logo.svg" alt="">
+                <div class="cart-item-no">
+                <img id="cart" src="./ecommerce-product-page-main/images/icon-cart.svg" alt="">
+                <p id="item-no"></p>
+                </div>
+                <img class="avatar" src="./ecommerce-product-page-main/images/image-avatar.png" alt="">
+            </div>
+
+        </section>
+
+        
+     
+        <div class="image-slideshow">
+            <div class="cart">
+                <h4>Cart</h4>
+                <p id="empty">Your cart is empty.</p>
+                <div class="cart-container">
+                <div class="cart-item">
+                    <img src="./ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="">
+                    <div class="cart-content">
+                        <p>Fall Limited Edition Sneakers</p>
+                        <p>$125.00 x <span id="three">3</span> <span id="price">$375.00</span></p>
+                    </div>
+                    <img id="delete" src="./ecommerce-product-page-main/images/icon-delete.svg" alt="">
+                </div>
+                <button  type="button">Checkout</button>
+            </div>
+            </div>
+        </div>
+            <div class="shop-content">
+                <div class="images">
+            <div class="slides">
+                <img src="./ecommerce-product-page-main/images/image-product-1.jpg" style="display: block;" alt="">
+            </div>
+            <div class="slides">
+                <img src="./ecommerce-product-page-main/images/image-product-2.jpg" alt="">
+            </div>
+            <div class="slides">
+                <img src="./ecommerce-product-page-main/images/image-product-3.jpg" alt="">
+            </div>
+            <div class="slides">
+                <img src="./ecommerce-product-page-main/images/image-product-4.jpg" alt="">
+            </div>
+            
+            <img class="prev" onclick="setSlides(-1)" src="./ecommerce-product-page-main/images/icon-previous.svg" alt="">
+            <img class="next" onclick="setSlides(1)" src="./ecommerce-product-page-main/images/icon-next.svg" alt="">
+                </div>
+        
+    
+
+        <div class="content">
+            <h4>SNEAKER COMPANY</h4>
+            <div class="edition">
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                    durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+            </div>
+            <div class="amount">
+                <div class="discount">
+                    <h1>$125.00</h1>
+                    <p>50%</p>
+                </div>
+                <p>$250.00</p>
+            </div>
+
+            <div class="flex">
+            <div class="add">
+                <img id="minus" onclick="addItem(-1)" src="./ecommerce-product-page-main/images/icon-minus.svg" alt="">
+                <p id="item">0</p>
+                <img id="add" onclick="addItem(1)" src="./ecommerce-product-page-main/images/icon-plus.svg" alt="">
+            </div>
+            <button id="button" type="button"><img src="./ecommerce-product-page-main/images/icon-cart.svg" alt="">Add to cart</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="thumbnail">
+        <span class="thumb">
+            <img onclick="currentSlides(1)" src="./ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="">
+        </span>
+        <span class="thumb">
+            <img onclick="currentSlides(2)" src="./ecommerce-product-page-main/images/image-product-2-thumbnail.jpg" alt="">
+        </span>
+        <span class="thumb">
+            <img onclick="currentSlides(3)" src="./ecommerce-product-page-main/images/image-product-3-thumbnail.jpg" alt="">
+        </span>
+        <span class="thumb">
+            <img onclick="currentSlides(4)" src="./ecommerce-product-page-main/images/image-product-4-thumbnail.jpg" alt="">
+        </span>
+    </div>
+    </div>
+
+    <script src="function.js"></script>
+</body>
+</html>
